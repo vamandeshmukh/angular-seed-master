@@ -5,21 +5,21 @@ angular.
   component('laptopList', {
     template:
         '<ul>' +
-          '<li ng-repeat="phone in $ctrl.phones">' +
-            '<span>{{phone.name}}</span>' +
-            '<p>{{phone.snippet}}</p>' +
+          '<li ng-repeat="laptop in $ctrl.laptops">' +
+            '<span>{{laptop.name}}</span>' +
+            '<p>{{laptop.snippet}}</p>' +
           '</li>' +
         '</ul>',
     controller: function LaptopListController() {
-      this.phones = [
+      this.laptops = [
         {
-          name: 'Nexus S',
+          name: 'Dell Inspiron',
           snippet: 'Fast just got faster with Nexus S.'
         }, {
-          name: 'Motorola XOOM™ with Wi-Fi',
+          name: 'Lenovo',
           snippet: 'The Next, Next Generation tablet.'
         }, {
-          name: 'MOTOROLA XOOM™',
+          name: 'Apple Air',
           snippet: 'The Next, Next Generation tablet.'
         }
       ];
