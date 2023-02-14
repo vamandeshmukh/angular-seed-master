@@ -1,5 +1,38 @@
 <div>
     <h1>Blog List</h1>
+
+    <div>
+        <h2>Search a blog by Id</h2>
+        <input type="number" ng-model="blogId">
+        <input type="button" ng-click="searchBlogById()" value="Search a Blog">
+    </div>
+
+    <div>
+        <img ng-if="currentBlog.title" src="https://picsum.photos/900/400">
+        <h4>{{currentBlog.title}}</h4>
+        <span ng-repeat="elem in currentBlog.title.split(' ')">
+            <span ng-repeat="elem in currentBlog.title.split(' ')">
+                <span>{{currentBlog.body }} </span>
+            </span> </span>
+        </span>
+    </div>
+
+    <div>
+        <h2>Search all blogs</h2>
+        <input type="button" ng-click="searchAllBlogs()" value="Search all Blogs">
+    </div>
+
+
+    <div ng-repeat="blog in blogData">
+        <!-- <p>{{blog.id}}</p> -->
+        <h4> {{blog.title}} </h4>
+        <p> {{blog.body}} </p>
+        <p></p>
+    </div>
+
+</div>
+<!-- <div>
+    <h1>Blog List</h1>
     <h2>Search a blog by Id</h2>
     <input type="number" ng-model="blogId">
     <input type="button" ng-click="searchBlogById()" value="Search a Blog">
@@ -19,4 +52,4 @@
         <p></p>
     </div>
 
-</div>
+</div> -->
