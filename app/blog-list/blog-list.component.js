@@ -4,15 +4,22 @@ const dataUrl = 'https://jsonplaceholder.typicode.com/posts';
 
 const BlogListController = ($scope, $http) => {
 
+    $scope.blogData = [];
+
     $http.get(dataUrl)
-        .then(resp => console.log(resp.data))
+        // .then((res) => { // res })
+        .then(resp => {
+            $scope.blogData = resp.data;
+            console.log(resp.data);
+        })
         .catch(err => console.log(err));
+
+
+
 
     // $http.post(dataUrl, {})
     //     .then()
     //     .catch();
-
-
 };
 
 
