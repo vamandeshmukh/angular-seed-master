@@ -3,13 +3,11 @@
     <p>Laptops</p>
 
     <p>User data: {{userData}} </p>
-
     <input ng-model="userData" placeholder="Please enter">
 
     <p>Filtered Phones List</p>
     <p>Search a phone:</p>
     <input ng-model="searchPhone">
-
 
     <ul>
         <li ng-repeat="phone in phones | filter: searchPhone">
