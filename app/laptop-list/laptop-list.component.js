@@ -1,7 +1,6 @@
 'use strict';
 
-
-const LaptopListController = ($scope, $http, $log) => {
+const LaptopListController = ($scope) => {
 
     $scope.userData = {
         enteredData: '',
@@ -14,10 +13,6 @@ const LaptopListController = ($scope, $http, $log) => {
         console.log($scope.userData.submittedData);
     };
 
-
-
-
-
     $scope.phones = [
         {
             name: 'Nexus S',
@@ -29,6 +24,7 @@ const LaptopListController = ($scope, $http, $log) => {
             name: 'MOTOROLA XOOM™',
             snippet: 'The Next, Next Generation tablet. Nexus'
         }
+
     ];
 
     // // model - data 

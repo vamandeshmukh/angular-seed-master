@@ -4,7 +4,8 @@
 
 angular.module('phonecatApp', [
   'phoneList',
-  'laptopList'
+  'laptopList',
+  'blogList'
   // ,
   // 'otherComponent'
 ]);
