@@ -3,6 +3,8 @@
 
 const LaptopListController = ($scope, $http, $log) => {
 
+    $scope.userData = '';
+
     $scope.phones = [
         {
             name: 'Nexus S',
@@ -12,7 +14,7 @@ const LaptopListController = ($scope, $http, $log) => {
             snippet: 'The Next, Next Generation tablet.'
         }, {
             name: 'MOTOROLA XOOM™',
-            snippet: 'The Next, Next Generation tablet.'
+            snippet: 'The Next, Next Generation tablet. Nexus'
         }
     ];
 
