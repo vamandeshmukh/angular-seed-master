@@ -3,7 +3,20 @@
 
 const LaptopListController = ($scope, $http, $log) => {
 
-    $scope.userData = '';
+    $scope.userData = {
+        enteredData: '',
+        submittedData: ''
+    }
+
+    $scope.showUserData = () => {
+        $scope.userData.submittedData = $scope.userData.enteredData;
+        console.log($scope.userData.enteredData);
+        console.log($scope.userData.submittedData);
+    };
+
+
+
+
 
     $scope.phones = [
         {
