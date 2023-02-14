@@ -3,8 +3,8 @@
 // angular.module('phonecatApp', []);
 
 angular.module('phonecatApp', [
-  'phoneList'
+  'phoneList',
+  'laptopList'
   // ,
-  // 'laptopList',
-  // 'otherList'
+  // 'otherComponent'
 ]);
