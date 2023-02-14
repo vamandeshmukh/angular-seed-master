@@ -1,9 +1,22 @@
 <div>
     <h1>Blog List</h1>
-    <p>This is my blogs list</p>
+    <h2>Search a blog by Id</h2>
+    <input type="number" ng-model="blogId">
+    <input type="button" ng-click="searchBlogById()" value="Search a Blog">
+    <div>
+        <img ng-if="currentBlog.title" src="https://picsum.photos/900/400">
+        <h4>{{currentBlog.title}}</h4>
+        <p>{{currentBlog.body}}</p>
+    </div>
+
+    <h2>This is all the blogs list</h2>
+    <input type="button" ng-click="searchAllBlogs()" value="Search all Blogs">
+
 
     <div ng-repeat="blog in blogData">
-        <div> {{blog.title}} </div>
+        <h4> {{blog.title}} </h4>
+        <p> {{blog.body}} </p>
+        <p></p>
     </div>
 
 </div>
