@@ -8,6 +8,9 @@ angular.
         templateUrl: 'phone-list/phone-list.tempelate.html',
         controller: function PhoneListController() {
 
+
+
+
         }
     });
 

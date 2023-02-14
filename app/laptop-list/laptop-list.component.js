@@ -3,15 +3,28 @@
 
 const LaptopListController = ($scope, $http, $log) => {
 
-    // model - data 
-    $scope.empData = {
-        eid: 101,
-        firstName: 'Sonu',
-        salary: 10.25,
-        city: 'Chennai',
-        isIndian: true,
-        phones: [9876543210, 6789012345]
-    };
+    $scope.phones = [
+        {
+            name: 'Nexus S',
+            snippet: 'Fast just got faster with Nexus S.'
+        }, {
+            name: 'Motorola XOOM™ with Wi-Fi',
+            snippet: 'The Next, Next Generation tablet.'
+        }, {
+            name: 'MOTOROLA XOOM™',
+            snippet: 'The Next, Next Generation tablet.'
+        }
+    ];
+
+    // // model - data 
+    // $scope.empData = {
+    //     eid: 101,
+    //     firstName: 'Sonu',
+    //     salary: 10,
+    //     city: 'Chennai',
+    //     isIndian: true,
+    //     phones: [9876543210, 6789012345]
+    // };
 
 
 };
