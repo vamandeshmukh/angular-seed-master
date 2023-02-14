@@ -6,9 +6,13 @@ angular
   .component('laptopList', {
     template:
 
-      'This is my name',
+      'This is my name {{salary}}',
 
-    controller: function LaptopListController() {
+    controller: function LaptopListController($scope) {
       this.laptops = [];
+
+      $scope.salary = 10.5;
     }
   });
+
+  
