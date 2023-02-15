@@ -1,7 +1,10 @@
 <div class="container">
 
+    <!-- add writer's details after the image 
+    add comments below the blog body   -->
+
     <div>
-        <h4>{{currentBlog.title}}</h4>
+        <p class="display-5">{{currentBlog.title}}</p>
         <img ng-if="currentBlog.title" src="https://picsum.photos/900/400">
         <hr />
         <span ng-repeat="elem in currentBlog.title.split(' ')">
