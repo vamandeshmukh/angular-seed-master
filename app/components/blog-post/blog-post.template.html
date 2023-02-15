@@ -1,18 +1,53 @@
 <div class="container">
+    <div class="row">
+        <div class="col-2">
 
-    <div class="pt-3 mt-3">
-        <p class="display-5">{{currentBlog.title}}</p>
-        <img ng-if="currentBlog.title" src="https://picsum.photos/900/400">
-        <hr />
-        <!-- add writer's details here   -->
-        <span ng-repeat="elem in currentBlog.title.split(' ')">
-            <span ng-repeat="elem in currentBlog.title.split(' ')">
-                <span>{{currentBlog.body }} </span>
-            </span>
-            <p></p>
-        </span>
-        </span>
-        <!-- add comments here   -->
+        </div>
+        <div class="col-8">
+            <div class="pt-3 mt-3">
+                <p class="display-5">{{currentBlog.title}}</p>
+                <div class="text-center pb-3 pt-3">
+                    <img width="100%" ng-if="currentBlog.title" src="https://picsum.photos/900/400">
+                </div>
+                <div ng-if="blogWriter" class="lead">
+                    <hr />
+                    <p>
+                        Written by: {{blogWriter.name}}
+                        <br />
+                        Contact: <a ng-href="mailto:blogWriter.email">{{blogWriter.email}}</a>
+                        <br />
+                        City: {{blogWriter.address.city}}
+                        <br />
+                    </p>
+                    <hr />
+                </div>
+                <span ng-repeat="x in currentBlog.title.split(' ')">
+                    <span ng-repeat="y in currentBlog.title.split(' ')">
+                        <span>{{currentBlog.body }} </span>
+                    </span>
+                    <p></p>
+                </span>
+                </span>
+
+            </div>
+            <div>
+
+                <!-- <comment></comment> -->
+
+                <p>{{comments.length}} comments: </p>
+                <hr />
+                <div ng-repeat="comment in comments">
+                    <p class="lead">{{comment.name}}</p>
+                    <a ng-href="mailto:blogWriter.email">{{comment.email}}</a>
+                    <p>{{comment.body}}</p>
+                    <hr />
+                </div>
+            </div>
+        </div>
+
+        <div class="col-2">
+
+        </div>
+
     </div>
-
 </div>

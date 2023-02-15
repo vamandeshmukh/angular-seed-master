@@ -3,10 +3,15 @@
 const HeaderController = ($scope, $location) => {
 
     $scope.blogId = '';
+    $scope.randomBlogId = '';
+
+    setInterval(() => {
+        $scope.randomBlogId = Math.floor((Math.random() * 100) + 1);
+    }, 3000);
 
     $scope.searchBlogById = (blogId) => {
         if (blogId)
-            $location.path(`blogs/${blogId}`);
+            $location.path(`blog/${blogId}`);
         $scope.blogId = '';
     };
 };

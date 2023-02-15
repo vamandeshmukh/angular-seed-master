@@ -16,14 +16,22 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link" href="#!/blogs">Blogs</a>
+                    <a class="nav-link" href="#!/blogs">All Blogs</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" href="#!/blog/{{randomBlogId}}">Random Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#!/write">Write Blog</a>
+                </li>
+
+                <!-- <li class="nav-item">
                     <a class="nav-link" href="#!/laptops">Laptops</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#!/phones">Phones</a>
-                </li>
+                </li> -->
+
             </ul>
             <form class="d-flex" role="search">
                 <input class="form-control me-2" type="search" ng-model="blogId" placeholder="Search a blog...">

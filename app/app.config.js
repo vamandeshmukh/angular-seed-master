@@ -8,7 +8,10 @@ angular
                 .when('/blogs', {
                     template: '<blog-list></blog-list>'
                 })
-                .when('/blogs/:blogId', {
+                .when('/write', {
+                    template: '<write-blog></write-blog>'
+                })
+                .when('/blog/:blogId', {
                     template: '<blog-post></blog-post>'
                 })
                 .when('/laptops', {
