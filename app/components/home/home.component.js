@@ -10,7 +10,7 @@ angular
     .module('home')
     .component('home',
         {
-            templateUrl: 'home/home.template.html',
+            templateUrl: 'components/home/home.template.html',
             controller: HomeController
         }
     );

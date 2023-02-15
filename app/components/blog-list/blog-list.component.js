@@ -40,11 +40,12 @@ angular
     .module('blogList')
     .component('blogList',
         {
-            templateUrl: 'blog-list/blog-list.template.html',
+            templateUrl: 'components/blog-list/blog-list.template.html',
             controller: BlogListController
         }
     );
 
 
+    
     
     

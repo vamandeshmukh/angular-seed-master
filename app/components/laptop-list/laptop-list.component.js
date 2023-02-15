@@ -47,7 +47,7 @@ angular
     .module('laptopList')
     .component('laptopList',
         {
-            templateUrl: 'laptop-list/laptop-list.template.html',
+            templateUrl: 'components/laptop-list/laptop-list.template.html',
             // controller 
             controller: LaptopListController
         }

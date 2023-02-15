@@ -18,7 +18,7 @@ const PhoneListController = () => {
 angular
     .module('phoneList')
     .component('phoneList', {
-        templateUrl: 'phone-list/phone-list.template.html',
+        templateUrl: 'components/phone-list/phone-list.template.html',
         controller: PhoneListController
 
     });

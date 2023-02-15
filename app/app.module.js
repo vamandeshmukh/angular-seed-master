@@ -8,7 +8,8 @@ angular.module('phonecatApp', [
   'home',
   'phoneList',
   'laptopList',
-  'blogList'
+  'blogList',
+  'blogPost'
 ]);
 
 

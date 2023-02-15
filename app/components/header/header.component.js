@@ -1,6 +1,10 @@
 'use strict';
 
-const HeaderController = () => {
+const HeaderController = ($scope) => {
+
+    $scope.searchBlog = (blogName) => {
+
+    };
 
 };
 
@@ -10,7 +14,7 @@ angular
     .module('header')
     .component('header',
         {
-            templateUrl: 'header/header.template.html',
+            templateUrl: 'components/header/header.template.html',
             controller: HeaderController
         }
     );
