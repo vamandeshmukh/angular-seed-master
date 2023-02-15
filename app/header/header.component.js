@@ -4,7 +4,7 @@ const HeaderController = () => {
 
 };
 
-angular.module('header', []);
+angular.module('header', ['ngRoute']);
 
 angular
     .module('header')
