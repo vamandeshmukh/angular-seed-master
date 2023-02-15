@@ -1,17 +1,18 @@
 <div class="container">
 
-    <!-- add writer's details after the image 
-    add comments below the blog body   -->
-
-    <div>
+    <div class="pt-3 mt-3">
         <p class="display-5">{{currentBlog.title}}</p>
         <img ng-if="currentBlog.title" src="https://picsum.photos/900/400">
         <hr />
+        <!-- add writer's details here   -->
         <span ng-repeat="elem in currentBlog.title.split(' ')">
             <span ng-repeat="elem in currentBlog.title.split(' ')">
                 <span>{{currentBlog.body }} </span>
-            </span> </span>
+            </span>
+            <p></p>
         </span>
+        </span>
+        <!-- add comments here   -->
     </div>
 
 </div>
