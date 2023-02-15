@@ -26,8 +26,8 @@
                 </li>
             </ul>
             <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search a blog...">
-                <button class="btn btn-outline-primary" type="submit">Search</button>
+                <input class="form-control me-2" type="search" ng-model="blogId" placeholder="Search a blog...">
+                <button class="btn btn-outline-primary" type="submit" ng-click="searchBlogById(blogId)">Search</button>
             </form>
         </div>
     </div>

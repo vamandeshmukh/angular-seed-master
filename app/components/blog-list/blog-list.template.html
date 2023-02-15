@@ -1,17 +1,13 @@
-<div class="container">
-    <h1>Blog List</h1>
-
-    <div>
-        <h2>Search all blogs</h2>
-        <input type="button" ng-click="searchAllBlogs()" value="Search all Blogs">
-    </div>
-
+<div class="container pt-3 mt-3">
+    <p class="display-1 text-primary text-center">Deloitte Blog List</p>
+    <hr />
     <div ng-repeat="blog in blogData">
-        <a href="#!/blogs/{{blog.id}}">{{blog.title}}</a>
+        <a ng-href="#!/blogs/{{blog.id}}">{{blog.title}}</a>
         <p></p>
     </div>
+</div>
 
-    <!-- <div>
+<!-- <div>
         <h2>Search a blog by Id</h2>
         <input type="number" ng-model="blogId">
         <input type="button" ng-click="searchBlogById()" value="Search a Blog">
@@ -27,7 +23,7 @@
         </span>
     </div> -->
 
-    <!-- <div>
+<!-- <div>
         <h2>Search all blogs</h2>
         <input type="button" ng-click="searchAllBlogs()" value="Search all Blogs">
     </div>
@@ -37,7 +33,6 @@
         <p></p>
     </div> -->
 
-</div>
 <!-- <div>
     <h1>Blog List</h1>
     <h2>Search a blog by Id</h2>

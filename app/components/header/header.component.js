@@ -1,11 +1,14 @@
 'use strict';
 
-const HeaderController = ($scope) => {
+const HeaderController = ($scope, $location) => {
 
-    $scope.searchBlog = (blogName) => {
+    $scope.blogId = '';
 
+    $scope.searchBlogById = (blogId) => {
+        if (blogId)
+            $location.path(`blogs/${blogId}`);
+        $scope.blogId = '';
     };
-
 };
 
 angular.module('header', []);
@@ -18,6 +21,5 @@ angular
             controller: HeaderController
         }
     );
-
 
 
