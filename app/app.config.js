@@ -14,9 +14,12 @@ angular
                 .when('/phones', {
                     template: '<phone-list></phone-list>'
                 })
-                .when('/', {
-                    template: '<phone-list></phone-list>'
+                .when('/home', {
+                    template: '<home></home>'
                 })
-                .otherwise('/phones');
+                .when('/', {
+                    template: '<home></home>'
+                })
+                .otherwise('/home');
         }
     ]);

@@ -4,6 +4,8 @@
 
 angular.module('phonecatApp', [
   'ngRoute',
+  'header',
+  'home',
   'phoneList',
   'laptopList',
   'blogList'
