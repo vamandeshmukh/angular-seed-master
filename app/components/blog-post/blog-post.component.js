@@ -1,10 +1,12 @@
 'use strict';
 
 const blogUrl = 'https://jsonplaceholder.typicode.com';
+let postId = '';
 
 const BlogPostController = ($scope, $http, $routeParams) => {
 
     $scope.blogId = $routeParams.blogId;
+    postId = $routeParams.blogId;
     $scope.currentBlog = {};
     $scope.blogWriter = {};
     $scope.comments = [];
@@ -28,7 +30,7 @@ const BlogPostController = ($scope, $http, $routeParams) => {
             $http.get(`${blogUrl}/posts/${$scope.blogId}/comments`)
                 .then((resp) => {
                     $scope.comments = resp.data;
-                    console.log($scope.blogWriter.length);
+                    console.log($scope.comments.length);
                 })
                 .catch((err) => {
                     console.log(err);
@@ -59,6 +61,7 @@ angular
             controller: BlogPostController
         }
     );
+
 
 
 

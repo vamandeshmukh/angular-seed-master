@@ -3,7 +3,7 @@
 const HeaderController = ($scope, $location) => {
 
     $scope.blogId = '';
-    $scope.randomBlogId = '';
+    $scope.randomBlogId = Math.floor((Math.random() * 100) + 1);
 
     setInterval(() => {
         $scope.randomBlogId = Math.floor((Math.random() * 100) + 1);
