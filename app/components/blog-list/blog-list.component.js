@@ -1,12 +1,10 @@
 'use strict';
 
-const dataUrl = 'https://jsonplaceholder.typicode.com/posts/';
-
-const BlogListController = ($scope) => {
+const BlogListController = ($scope, blogApis) => {
 
     $scope.blogData = [];
 
-    getAllBlogs()
+    blogApis.getAllBlogs()
         .then((resp) => {
             $scope.blogData = resp.data;
             console.log($scope.blogData);
@@ -23,7 +21,7 @@ angular
     .component('blogList',
         {
             templateUrl: 'components/blog-list/blog-list.template.html',
-            controller: BlogListController
+            controller: ['$scope', 'blogApis', BlogListController]
         }
     );
 

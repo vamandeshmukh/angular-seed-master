@@ -1,19 +1,16 @@
-angular.module('blogService', []);
+const blogService = angular.module('blogService', []);
 
-angular.module('blogService')
-    .factory('blogApis', ($http) => {
+const apiUrl = 'https://jsonplaceholder.typicode.com';
 
-        const blog = {};
+blogService.factory('blogApis', ['$http' , ($http) => {
 
-        blog.getBlogs = () => {
-            return $http.get('https://jsonplaceholder.typicode.com/posts/');
-        };
+    const blog = {};
 
-        // create other services 
+    blog.getAllBlogs = () => {
+        return $http.get(`${apiUrl}/posts`);
+    };
 
-        // blog.getBlogs = () => {
-        //     return $http.get('https://jsonplaceholder.typicode.com/posts/');
-        // };
+    // create other services 
 
-        return blog;
-    });
+    return blog;
+}]);
