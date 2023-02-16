@@ -3,7 +3,7 @@
     <hr />
     <div ng-repeat="comment in comments">
         <p class="lead">{{comment.name}}</p>
-        <a ng-href="mailto:blogWriter.email">{{comment.email}}</a>
+        <p>Posted by: <a ng-href="mailto:blogWriter.email">{{comment.email}}</a></p>
         <p>{{comment.body}}</p>
         <hr />
     </div>

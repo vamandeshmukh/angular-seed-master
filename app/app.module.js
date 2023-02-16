@@ -4,6 +4,7 @@
 
 angular.module('phonecatApp', [
   'ngRoute',
+  'blogService',
   'header',
   'footer',
   'comment',

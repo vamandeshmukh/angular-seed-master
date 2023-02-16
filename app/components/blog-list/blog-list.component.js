@@ -2,10 +2,11 @@
 
 const dataUrl = 'https://jsonplaceholder.typicode.com/posts/';
 
-const BlogListController = ($scope, $http) => {
+const BlogListController = ($scope) => {
 
     $scope.blogData = [];
-    $http.get(dataUrl)
+
+    getAllBlogs()
         .then((resp) => {
             $scope.blogData = resp.data;
             console.log($scope.blogData);
