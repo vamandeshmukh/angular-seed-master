@@ -24,6 +24,6 @@ blogService.factory('blogApis', ['$http', ($http) => {
         return $http.post(`${apiUrl}/posts/`, blogPost);
     };
 
-
     return blog;
+
 }]);
