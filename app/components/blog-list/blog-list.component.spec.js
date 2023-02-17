@@ -4,7 +4,6 @@
 // JavaScript -  jasmine, jest, next, enzyme  
 // test runner - karma 
 
-
 describe('testing the methods in the math class', () => {
 
     // testing config
@@ -40,7 +39,7 @@ describe('testing the methods in the math class', () => {
 
     // test case 
     it('going to fail', () => {
-        expect(5 + 5).toBe(5);
+        expect(5 + 5).toBe(10);
     });
 
 });

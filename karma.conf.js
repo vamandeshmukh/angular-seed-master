@@ -15,7 +15,7 @@ module.exports = function (config) {
 
     autoWatch: true,
 
-    frameworks: ['jasmine'],
+    frameworks: ['jasmine' /*, 'enzyme' */],
 
     browsers: ['Chrome'],
 
