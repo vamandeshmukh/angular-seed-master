@@ -2,14 +2,19 @@ angular.module("myApp", [])
     .controller("myCtrl", function ($scope) {
         $scope.name = 'Sonu';
         $scope.empData = { eid: 101, firstName: 'Monu' };
+        $scope.myFun = () => {
+            alert('fun!');
+            return 'fun';
+        };
     })
     .directive("myDirective", function () {
         return {
             scope: {
                 myName: '@',
-                myEmpData: '='
+                myEmpData: '=',
+                getMyFun: '&'
             },
-            template: "<div>{{myEmpData.firstName}} </div>"
+            template: "<div> {{getMyFun()}} {{myName}} {{myEmpData.firstName}} </div>"
         };
     });
 
